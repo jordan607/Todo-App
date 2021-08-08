@@ -1,0 +1,21 @@
+
+<div class = "my-3">
+<h3>Add a Todos</h3>
+<form (ngSubmit)= "onSubmit()">
+    <div class="mb-3">
+      <label for="title" class="form-label">Todo Title</label>      
+      <input type="text" [(ngModel)]="title" class="form-control" name ="title" id="title">
+
+    </div>
+    <div class="mb-3">
+      <label for="desc" class="form-label">Todo Description</label>
+      <input type="text" [(ngModel)]="desc" class="form-control" name = "desc" id="desc">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" [(ngModel)]="check" class="form-check-input" name = "check" id="check">
+      <label class="form-check-label" for="exampleCheck1">Active</label>
+    </div>
+    <button type="submit" class="btn btn-sm btn-primary">Add Todo</button>
+  </form>
+
+</div>
